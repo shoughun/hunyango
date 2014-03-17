@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/preloader.css" rel="stylesheet" />
     <script src="js/pace.min.js"></script>
+	<script type="text/javascript" src="js/formcalculations.js"></script>
     <link href="css/initializer_css.min.css" rel="stylesheet" />
     <link data-id-stylesheet="theme" href="css/initializer_css.min.css" rel="stylesheet" />
     <script src="js/modernizr.js"></script>
@@ -125,26 +126,26 @@
 
 
                     <li>
-                        <h2>From an <b>IDEA</b></h2>
+                        <h2>(1) From an <b>IDEA</b></h2>
                     </li>
 
 
 
                     <li>
-                        <h2>To <b>CODE</b></h2>
+                        <h2>(2) To <b>CODE</b></h2>
                     </li>
 
 
 
                     <li>
-                        <h2>Transform into a <b>DESIGN</b></h2>
+                        <h2>(3) Into a <b>DESIGN</b></h2>
                     </li>
 
 
 
 
                     <li>
-                        <h2>For <b>YOU</b></h2>
+                        <h2>(4) For <b>YOU</b></h2>
                     </li>
 
 
@@ -171,7 +172,7 @@
                         <h2 class="service-title" data-animation="fadeInRightBig">Web Design and Development</h2>
                         <div class="service-text" data-animation="fadeInRightBig" data-animation-delay=".2s">
                             <p>
-                                We create <b>Fully Responsive Website</b>
+                                Responsive web design ensures your website will work at its best on all web enabled devices including Smartphones and tablets.
                             </p>
                         </div>
 
@@ -195,7 +196,7 @@
                         <h2 class="service-title" data-animation="fadeInLeftBig">Search Engine Optimize</h2>
                         <div class="service-text" data-animation="fadeInLeftBig" data-animation-delay=".2s">
                             <p>
-                                Created website are optimize to be <b>Search Engine Friendly</b> with onpage optimization.
+                                On-page SEO is perhaps the most important first step not only for better rankings but also for a successful internet marketing campaign. 
                             </p>
                         </div>
 
@@ -215,10 +216,10 @@
                     <div class="col-sm-4"><i class="service-icon icon-seo-landing-page3" data-animation="rotateIn"></i></div>
                     <div class="col-sm-offset-1 col-sm-7  service-content">
 
-                        <h2 class="service-title" data-animation="fadeInRightBig">Rapid Agile Production</h2>
+                        <h2 class="service-title" data-animation="fadeInRightBig">Rapid Agile Development</h2>
                         <div class="service-text" data-animation="fadeInRightBig" data-animation-delay=".2s">
                             <p>
-                                We work fast, so that your website can &nbsp&nbsp&nbsp<b>Take Off in less than a week</b>.
+                                Agile software development is our software development that is methods based on iterative and incremental development.
                             </p>
                         </div>
 
@@ -241,7 +242,7 @@
                         <h2 class="service-title" data-animation="fadeInLeftBig">Hosting and Domain Registration</h2>
                         <div class="service-text" data-animation="fadeInLeftBig" data-animation-delay=".2s">
                             <p>
-                                As part of our service commitment we will host and register your website domain for a year, <b>for FREE!</b>
+                                We will host you on one of the world's top 10 largest web hosting companies with more than 8,000,000 hosted domains.
                             </p>
                         </div>
 
@@ -264,7 +265,7 @@
                         <h2 class="service-title" data-animation="fadeInRightBig">Marketing</h2>
                         <div class="service-text" data-animation="fadeInRightBig" data-animation-delay=".2s">
                             <p>
-                                Social Network Marketing, Google Analytics Integration, Off-page Search Engine Optimization...
+                                Boost your business and your ability to earn. Our online marketing tactics will put you on the path to getting more in your business.
                             </p>
                         </div>
 
@@ -291,38 +292,38 @@
 
                     <ul class="pricing-table-item" data-animation="fadeInLeftBig">
 
-                        <li class="pricing-table-title">Starter</li>
+                        <li class="pricing-table-title">Portfolio</li>
                         <li class="pricing-table-price">
-                            <span class="price-large">12
+                            <input class="price-large" type="text" id="totalcost" value="0.00" readonly/>
                             <span class="price-small">Php</span>
-                            </span>
                         </li>
-                        <li>5 users</li>
-                        <li>10 projects</li>
-                        <li>10 GB amount of space</li>
-                        <li>5 e-mail accounts</li>
+<li><input type="checkbox" id='game0' value="9.99"  onclick="UpdateCost()">&nbsp;Game 1 ( 9.99)<br></li>
+<li><input type="checkbox" id='game1' value="19.99" onclick="UpdateCost()">&nbsp;Game 2 (19.99)<br></li>
+<li><input type="checkbox" id='game2' value="27.50" onclick="UpdateCost()">&nbsp;Game 3 (27.50)<br></li>
+<li><input type="checkbox" id='game3' value="45.65" onclick="UpdateCost()">&nbsp;Game 4 (45.65)<br></li>
+<li><input type="checkbox" id='game4' value="87.20" onclick="UpdateCost()">&nbsp;Game 5 (87.20)<br></li>
                         <li class="pricing-table-sign-up">
-                            <a href="#" class="btn btn-brand btn-lg"><i class="fa fa-lock"></i>&nbsp;&nbsp;Sign Up</a>
+                            <a href="#" class="btn btn-brand btn-lg" data-toggle="modal" data-target="#business_modal"><i class="fa fa-check"></i>&nbsp;&nbsp;Submit</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-md-4">
 
+                    <ul class="pricing-table-item featured-plan" data-animation="fadeInLeftBig" data-featured-text="Best Plan">
 
-
-                    <ul class="pricing-table-item featured-plan" data-featured-text="Best Plan" data-animation="bounceInUp">
-                        <li class="pricing-table-title">Pro</li>
+                        <li class="pricing-table-title">Business</li>
                         <li class="pricing-table-price">
-                            <span class="price-large">16
-                            <span class="price-small">Php</span>
-                            </span>
+                            <input class="price-large" type="text" id="totalcost1" value="0.00" readonly/>
+                            <span><span class="price-small" style="color:black; weight:bold">Php</span>
+							</span>
                         </li>
-                        <li>25 users</li>
-                        <li>50 projects</li>
-                        <li>100 GB amount of space</li>
-                        <li>50 e-mail accounts</li>
+<li><input type="checkbox" id='gam0' value="9.99"  onclick="UpdateCost1()">&nbsp;Game 1 ( 9.99)<br></li>
+<li><input type="checkbox" id='gam1' value="19.99" onclick="UpdateCost1()">&nbsp;Game 2 (19.99)<br></li>
+<li><input type="checkbox" id='gam2' value="27.50" onclick="UpdateCost1()">&nbsp;Game 3 (27.50)<br></li>
+<li><input type="checkbox" id='gam3' value="45.65" onclick="UpdateCost1()">&nbsp;Game 4 (45.65)<br></li>
+<li><input type="checkbox" id='gam4' value="87.20" onclick="UpdateCost1()">&nbsp;Game 5 (87.20)<br></li>
                         <li class="pricing-table-sign-up">
-                            <a href="#" class="btn btn-brand btn-lg"><i class="fa fa-lock"></i>&nbsp;&nbsp;Sign Up</a>
+                            <a href="#" class="btn btn-brand btn-lg" data-toggle="modal" data-target="#business_modal"><i class="fa fa-check"></i>&nbsp;&nbsp;Submit</a>
                         </li>
                     </ul>
 
@@ -331,18 +332,18 @@
 
 
                     <ul class="pricing-table-item" data-animation="fadeInRightBig">
-                        <li class="pricing-table-title">Expert</li>
+                        <li class="pricing-table-title">Webhosting</li>
                         <li class="pricing-table-price">
-                            <span class="price-large">30
+                            <input class="price-large" type="text" id="totalcost2" value="0.00" readonly />
                             <span class="price-small">Php</span>
-                            </span>
                         </li>
-                        <li>100 users</li>
-                        <li>500 projects</li>
-                        <li>1000 GB amount of space</li>
-                        <li>200 e-mail accounts</li>
+<li><input type="checkbox" id='ga0' value="9.99"  onclick="UpdateCost2()">&nbsp;Game 1 ( 9.99)<br></li>
+<li><input type="checkbox" id='ga1' value="19.99" onclick="UpdateCost2()">&nbsp;Game 2 (19.99)<br></li>
+<li><input type="checkbox" id='ga2' value="27.50" onclick="UpdateCost2()">&nbsp;Game 3 (27.50)<br></li>
+<li><input type="checkbox" id='ga3' value="45.65" onclick="UpdateCost2()">&nbsp;Game 4 (45.65)<br></li>
+<li><input type="checkbox" id='ga4' value="87.20" onclick="UpdateCost2()">&nbsp;Game 5 (87.20)<br></li>
                         <li class="pricing-table-sign-up">
-                            <a href="#" class="btn btn-brand btn-lg"><i class="fa fa-lock"></i>&nbsp;&nbsp;Sign Up</a>
+                            <a href="#" class="btn btn-brand btn-lg"><i class="fa fa-check"></i>&nbsp;&nbsp;Submit</a>
                         </li>
                     </ul>
 
@@ -460,8 +461,6 @@
         </div>
 
     </section>
-
-
 
     <section id="features" class="features">
 
